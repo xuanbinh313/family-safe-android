@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#f2f5f6"
+    android:background="@color/gray"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -11,30 +11,30 @@
         android:id="@+id/txt_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Security"
+        android:text="@string/security"
         android:textSize="22sp"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/space_16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cd_blue"
         app:layout_constraintTop_toBottomOf="@+id/cd_red"
-        app:cardBackgroundColor="#52d0c2"
-        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/blue"
+        android:layout_margin="@dimen/space_16dp"
         android:layout_width="match_parent"
         android:layout_height="180dp"/>
     <TextView
         android:id="@+id/txt_guard"
         app:layout_constraintTop_toTopOf="@+id/cd_blue"
         app:layout_constraintLeft_toLeftOf="@+id/cd_blue"
-        android:text="Guard"
+        android:text="@string/guard"
         android:textSize="30sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/space_16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <TextView
@@ -45,7 +45,7 @@
         android:text="Open when you are an a potential dangerous journey"
         android:textSize="18sp"
         android:textColor="@color/white"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/space_16dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"/>
     <ImageView
@@ -53,7 +53,7 @@
         app:layout_constraintRight_toRightOf="@id/cd_blue"
         app:layout_constraintTop_toTopOf="@id/cd_blue"
         app:layout_constraintBottom_toBottomOf="@id/cd_blue"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/space_16dp"
         android:src="@drawable/ic_guard"
         android:layout_width="96dp"
         android:layout_height="96dp"/>
@@ -61,19 +61,19 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cd_red"
         app:layout_constraintTop_toBottomOf="@+id/txt_title"
-        app:cardBackgroundColor="#f1616d"
-        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/red"
+        android:layout_margin="@dimen/space_16dp"
         android:layout_width="match_parent"
         android:layout_height="180dp"/>
     <TextView
         android:id="@+id/txt_sos"
         app:layout_constraintTop_toTopOf="@+id/cd_red"
         app:layout_constraintLeft_toLeftOf="@+id/cd_red"
-        android:text="SOS"
+        android:text="@string/sos"
         android:textSize="30sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/space_16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <TextView
@@ -84,7 +84,7 @@
         android:text="In case of emergency, keep telling family members to contact me"
         android:textSize="18sp"
         android:textColor="@color/white"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/space_16dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"/>
     <ImageView
@@ -92,8 +92,15 @@
         app:layout_constraintRight_toRightOf="@id/cd_red"
         app:layout_constraintTop_toTopOf="@id/cd_red"
         app:layout_constraintBottom_toBottomOf="@id/cd_red"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/space_16dp"
         android:src="@drawable/ic_sos"
         android:layout_width="96dp"
         android:layout_height="96dp"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:menu="@menu/bottom_bar_items"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
