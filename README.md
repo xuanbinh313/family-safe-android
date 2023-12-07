@@ -1,7 +1,9 @@
 # Family Safety
 This app help me to learn fast components and flow a real project to next level
-## Step 1: Create UI Security only
+# Design
 ![ui.png](./documents/ui.png)
+## Step 1: Create UI Security only
+![ui.png](./documents/step1.jpg)
 ## Step 2: Bottom Navigation | Colors | Manifest
 - Create Bottom Navigation Bar UI
 - Create Color Values
