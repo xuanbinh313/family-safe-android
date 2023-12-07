@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.binhcodev.familysafe"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.binhcodev.familysafe"
